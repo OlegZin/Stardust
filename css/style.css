@@ -1,0 +1,190 @@
+#app {
+    background-image: url('../img/bg1.jpg');
+    animation: bg 600s linear infinite;
+}
+
+.v-virtual-scroll {
+    overflow-x: hidden !important;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.v-virtual-scroll::-webkit-scrollbar {
+    background-color: black;
+    width: 3px;
+}
+.v-virtual-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(37, 37, 37, 0.5);
+}
+
+.tin_text {
+    font-weight: lighter;
+    font-size: 0.9em;
+}
+
+@keyframes bg {
+    from {
+        background-position-x: 1024px;
+    }
+    to {
+        background-position-x: 0px;
+    }
+}
+
+#rightObject {
+    transform: scale(-1, 1);
+}
+
+.dark-button {
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid dimgray;
+    border-radius: 3px;
+}
+.dark-button:hover {
+    background-color: rgba(37, 37, 37, 0.5);
+}
+
+.light-button {
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(155, 174, 175, 0.5);
+    border: 1px solid rgb(119, 117, 117);
+    border-radius: 3px;
+}
+.light-button:hover {
+    background-color: rgba(192, 213, 214, 0.5);
+}
+
+.space-object {
+    max-height: 300px;
+    overflow: hidden;
+}
+
+/* fix for short input fields */
+.select-short input {
+    max-width: 0;
+}
+
+.comeOutLeft {
+    position: relative;
+    animation: comeOutLeft 5s ease-out;
+}
+
+@keyframes comeOutLeft {
+    from {
+        margin-left: -1000px;
+    }
+    to {
+        margin-left: 0px;
+    }
+}
+
+.comeInLeft {
+    position: relative;
+    animation: comeInLeft 5s ease-in;
+}
+
+@keyframes comeInLeft {
+    from {
+        margin-left: 0px;
+    }
+    to {
+        margin-left: -1000px;
+    }
+}
+
+.comeOutRight {
+    position: relative;
+    animation: comeOutRight 5s ease-out;
+}
+
+@keyframes comeOutRight {
+    from {
+        margin-left: 1000px;
+    }
+    to {
+        margin-left: 0px;
+    }
+}
+
+.comeInRight {
+    position: relative;
+    animation: comeInRight 5s ease-in;
+}
+
+@keyframes comeInRight {
+    from {
+        margin-left: 0px;
+    }
+    to {
+        margin-left: 1000px;
+    }
+}
+
+#bullet {
+    position: absolute;
+}
+
+.bullet-laser {
+    background-image: url('../img/bullets/energy.png');
+    background-repeat: repeat;
+    height: 5px;
+    width: 0px;
+    z-index: 10;
+}
+
+.bullet-from-right-laser {
+    animation: from-right-laser .5s linear;
+}
+
+@keyframes from-right-laser {
+    from {
+    }
+    to {
+        left: 0;
+        width: 50px;
+    }
+}
+
+.bullet-from-left-laser {
+    animation: from-left-laser .5s linear;
+}
+
+@keyframes from-left-laser {
+    from {
+    }
+    to {
+        left: 100vw;
+        width: 50px;
+    }
+}
+
+.left-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.left-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.right-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.right-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.trace {
+    background-color: white;
+    padding: 20px;
+}

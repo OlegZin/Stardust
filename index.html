@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stardust</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <v-app>
+            <v-main>
+                <app-bar :state="state" :locales="locales"></app-bar>
+                <main-component :state="state"></main-component>
+            </v-main>
+          </v-app>
+    </div>
+    
+    <!-- system -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+<!--    <script src="https://unpkg.com/vue-i18n@8"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-i18n/8.0.0/vue-i18n.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+
+    <!-- components --> 
+    <script src="components/appBar.js"></script>
+    <script src="components/appBarButton.js"></script>
+    <script src="components/mainComponent.js"></script>
+    <script src="components/window.js"></script>
+    <script src="components/windowInventory.js"></script>
+    <script src="components/windowPersone.js"></script>
+    <script src="components/windowTalk.js"></script>
+    <script src="components/windowQuest.js"></script>
+
+    <!-- messages --> 
+    <script src="messages/en/en.js"></script>
+    <script src="messages/en/quest/arrival.js"></script>
+    <script src="messages/en/dialog/dialog.js"></script>
+    <script src="messages/en/dialog/wakeup.js"></script>
+
+    <script src="messages/ru/ru.js"></script>
+    <script src="messages/ru/quest/arrival.js"></script>
+    <script src="messages/ru/dialog/dialog.js"></script>
+    <script src="messages/ru/dialog/wakeup.js"></script>
+
+    <!-- data --> 
+    <script src="js/dialogs.js"></script>
+    <script src="js/quests.js"></script>
+    <script src="js/items.js"></script>
+
+    <!-- functions --> 
+    <script src="js/functions.js"></script>
+
+    <!-- main script --> 
+    <script src="js/main.js"></script>
+</body>
+</html>
