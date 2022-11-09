@@ -13,6 +13,36 @@ const items = {
         type: 'weapon',
         onUse: `this.setAttr('player', 'hp', 40); this.changeInventory('player', 'small_aid', -1);`,
     },
+    small_tool: {
+        name: 'small_tool',
+        caption: 'items.small_tool.name',
+        descript: 'items.small_tool.descript',
+        image: 'small_tool',
+        type: 'tool',
+        size: 'oneHand',
+        onEquip: `this.changeSkill('technic', 1)`,
+        onUnequip: `this.changeSkill('technic', -1)`,
+    },
+    medium_tool: {
+        name: 'medium_tool',
+        caption: 'items.medium_tool.name',
+        descript: 'items.medium_tool.descript',
+        image: 'medium_tool',
+        type: 'tool',
+        size: 'oneHand',
+        onEquip: `this.changeSkill('technic', 2)`,
+        onUnequip: `this.changeSkill('technic', -2)`,
+    },
+    big_tool: {
+        name: 'big_tool',
+        caption: 'items.big_tool.name',
+        descript: 'items.big_tool.descript',
+        image: 'big_tool',
+        type: 'tool',
+        size: 'oneHand',
+        onEquip: `this.changeSkill('technic', 3)`,
+        onUnequip: `this.changeSkill('technic', -3)`,
+    },
 
     // Weapon
     // Pistol

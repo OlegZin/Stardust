@@ -47,6 +47,9 @@ const en = {
             name: 'Small battery',
             descript: 'Restores suit charge up to 20',
         },
+        small_tool: { name: 'Multitool', descript: 'Mechanic skill +1' },
+        medium_tool: { name: 'Toolbox', descript: 'Mechanic skill +2' },
+        big_tool: { name: 'Technobox', descript: 'Mechanic skill +3' },
         
         weapon: {
             instigator: { name: 'Instigator' },

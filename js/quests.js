@@ -26,9 +26,13 @@ const quests = {
                     {
                         caption: 'quest.arrival.main.action.checkMessages',
                         action: `
-                            // this.stepQuest(this.randFromArr('mails', true))
-                            this.stepQuest(6)
-                            this.setVar('questText', null)`,
+                            this.setVar('questText', null)    
+                            const step = this.randFromArr('mails', true)
+                            if (step) {
+                                this.stepQuest(step) // goto rendom email
+                            } else {
+                                this.stepQuest(13) // no emails
+                            }`,
                     },
                     {
                         caption: 'quest.arrival.main.action.watchFilm',
@@ -346,16 +350,19 @@ const quests = {
                     {
                         caption: 'quest.arrival.mail.interview.question4.action.weapon',
                         action: `
+                            this.setItem('referee', 1)
                             this.stepQuest(11)`,
                     },
                     {
                         caption: 'quest.arrival.mail.interview.question4.action.books',
                         action: `
+                            this.changeSkill('sientist', 1)
                             this.stepQuest(11)`,
                     },
                     {
                         caption: 'quest.arrival.mail.interview.question4.action.tools',
                         action: `
+                            this.setItem('small_tool', 1)
                             this.stepQuest(11)`,
                     },
                 ],
@@ -414,6 +421,17 @@ const quests = {
                     },
                 ],
             },
-         ],
+            { // 13
+                location: 'screen',
+                text: 'quest.arrival.mail.empty.text',
+                actions: [
+                    {
+                        caption: 'answers.ok',
+                        action: `
+                            this.stepQuest(0)`,
+                    },
+                ],
+            },
+        ],
     },
 }

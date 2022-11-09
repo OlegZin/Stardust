@@ -19,11 +19,11 @@ Vue.component('window-persone', {
                                 </v-col>
                             </v-row>
                             <v-row dense v-else>
-                                <v-col cols="6">
+                                <v-col cols="auto">
                                     <v-img :src="$root.rightHandItemImage" @click.stop="$root.unequip('rightHand')" />
                                 </v-col>
                                 <v-spacer />
-                                <v-col cols="6">
+                                <v-col cols="auto">
                                     <v-img :src="$root.leftHandItemImage" @click.stop="$root.unequip('leftHand')" />
                                 </v-col>
                             </v-row>

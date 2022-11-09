@@ -47,10 +47,9 @@ const ru = {
             name: 'Малая батарея',
             descript: 'Восстанавливает заряд костюма до 20.',
         },
-        small_blaster: {
-            name: 'Малый бластер',
-            descript: '20 <img src="img/interface/termal.png" width="15">. Использует малые батареи.',
-        },
+        small_tool: { name: 'Мультитул', descript: 'Механик +1' },
+        medium_tool: { name: 'Инструменты', descript: 'Механик +2' },
+        big_tool: { name: 'Технокомплекс', descript: 'Механик +3' },
 
         weapon: {
             instigator: { name: 'Подстрекатель' },

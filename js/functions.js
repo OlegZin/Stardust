@@ -294,10 +294,10 @@ function clearBullet(context) {
 function randFromArr(context, name, unique) {
     let array = context.getVar(name)
     shuffle(array)
-    
+
     if (unique) {
         const value = array.shift()
-        setVar(name, array)
+        context.setVar(name, array)
         return value
     }
 

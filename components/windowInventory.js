@@ -20,6 +20,7 @@ Vue.component('window-inventory', {
                             <v-col cols="auto">
                                 <v-img v-if="item.type === 'weapon'" src="img/interface/icon-type-weapon.png" style="opacity: 0.25;"/>
                                 <v-img v-if="item.type === 'suit'" src="img/interface/icon-type-suit.png" style="opacity: 0.25;"/>
+                                <v-img v-if="item.type === 'tool'" src="img/interface/icon-type-tool.png" style="opacity: 0.25;"/>
                             </v-col>
                             <v-col cols="auto" class="orange--text text--lighten-4">
                                 <v-tooltip bottom>

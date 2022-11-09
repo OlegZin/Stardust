@@ -93,6 +93,9 @@ var app = new Vue({
                     splitter: 1,
                     starsky: 1,
                     citizen: 1,
+                    small_tool: 1,
+                    medium_tool: 1,
+                    big_tool: 1,
                 },
                 ship: {
 
@@ -297,8 +300,8 @@ var app = new Vue({
 
     mounted() {
         // this.startDialog('wakeup')
-        // this.startQuest('arrival')
-        this.storyline(0)
+        this.startQuest('arrival')
+        // this.storyline(0)
     },
 
     methods: {
@@ -350,5 +353,6 @@ var app = new Vue({
         clearBullet() { return clearBullet(this) },
 
         sleep(milliseconds) { return sleep(milliseconds) },
+        randFromArr(name, unique) { return randFromArr(this, name, unique) },
     },
 })

@@ -129,5 +129,8 @@ const arrival_en = {
                     <p>We look forward to long-term cooperation and mutual prosperity.</p>`,
             },
         },
+        empty: {
+            text: '...Mailbox is empty...',
+        },
     },
 }
